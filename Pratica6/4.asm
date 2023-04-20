@@ -9,7 +9,7 @@ main:
 	# for (int i = 28; i >= 0; i -= 4)
 	# $t0 = i
 loop:
-	blt 	$t0, $zero, exit
+	bltz 	$t0, exit
 	
 	sllv 	$t4, $s0, $t0
 	

@@ -23,7 +23,7 @@ main:
 	# for (int i = 27; i >= 0; i -= 3)
 	# $t0 = i
 loop:
-	blt 	$t0, $zero, exit
+	bltz 	$t0, exit
 	
 	sllv 	$t4, $s0, $t0
 	
